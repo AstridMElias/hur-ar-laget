@@ -22,6 +22,9 @@ namespace HurArLaget.Backend.Models // Filens adress HurArLaget -> Backend -> Mo
         //Vem uppdaterade senast
         public string SenastUppdateradAv { get; set; }
 
+        //Läggs till kommentar vid extra info
+        public string Kommentar { get; set; } 
+        
         //Tid och datum sparas ifall man behöver gå tillbaka och titta
         public DateTime UppdateradTid { get; set; } = DateTime.Now;
     }
