@@ -6,5 +6,18 @@
 
 <div class="text-center">
     <h1 class="display-4">Hur är läget?</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+<form method="post">
+<label for="Gårdsnamn">Välj här:</label>
+
+<input list="Gårdar" id="GårdId" name="GårdsNamn" placeholder="Eller sök här">
+
+<datalist id="GårdID">
+@foreach (var gård in Model.GårdId)
+{
+    <option value="@gård"></option>
+}
+
+</datalist>
+</form>
